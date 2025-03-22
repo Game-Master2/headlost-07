@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" alt="Logo" id="logo">
+                
+                <!-- Sidebar Menu -->
+                <ul id="sidemenu">
+                  <li><a href="#header">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><i class="ri-timer-line" onclick="closeMenu()"></i></li> <!-- Close icon inside the menu -->
+                </ul>
+                
+                <!-- Open Menu Icon (visible on small screens) -->
+                <i class="ri-menu-line" onclick="openMenu()"></i>
+              </nav>
+              
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hi, I'm <span>Ansari</span><br>Amaan From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-----------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-color-1">
+                    <img src="3.jpg">
+                </div>
+                <div class="about-color-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias eius qui voluptatibus, sint, autem id architecto corporis perspiciatis voluptates odio sapiente? Beatae ea placeat a magnam, vero explicabo assumenda. Beatae.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')" >Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, React, Node.js</li>
+                            <li><span>App Development</span><br>Android, iOS, Flutter</li>
+                            <li><span>UI/UX Design</span><br>Wireframing, Prototyping, User Research</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Experience">
+                        <ul>
+                            <li><span>Web & App Development</span><br>Built websites & mobile apps</li>
+                            <li><span>UI/UX Optimization</span><br>Enhanced performance & user experience</li>
+                            <li><span>Client Collaboration</span><br>Delivered custom web solutions</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Education">
+                        <ul>
+                            <li><span>Bachelor's in Computer Science</span><br>Kj Somaiya(2015-2019)</li>
+                            <li><span>Diploma in Web Development </span><br>M.H Saboo siddik(2011-2014)</li>
+                            <li><span>Certification in UI/UX Design </span><br>Coursera(2020-2025)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------service--------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="ri-pages-line"></i>
+                    <h2>Web Development</h2>
+                    <p>Designing and developing fast, responsive, and user-friendly websites using HTML, CSS, JavaScript, React, and Node.js. Ensuring SEO optimization, clean UI/UX, and smooth functionality for a seamless user experience.</p>
+                    <a href=" https://www.codecademy.com/">Learn More</a>
+                </div>
+                <div>
+                    <i class="ri-app-store-line"></i>
+                    <h2>App Development</h2>
+                    <p>Building high-performance, user-friendly mobile apps for Android & iOS using Flutter. Focused on smooth UI, fast performance, and seamless functionality to enhance user experience.</p>
+                    <a href=" https://flutter.dev/">Learn More</a>
+                </div>
+                <div>
+                    <i class="ri-chat-private-line"></i>
+                    <h2>Technical Support</h2>
+                    <p>Providing troubleshooting, debugging, and maintenance for websites and mobile apps. Ensuring smooth performance, security, and quick issue resolution for optimal functionality.</p>
+                    <a href="https://www.linkedin.com/feed/">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------portfolio----------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="8bb0522e1c925bf6900c67b997ea3047.jpg">
+                <div class="layer">
+                    <h3>Click Here</h3>
+                    <p>Download the Image</p>
+                    <a href="https://i.pinimg.com/736x/8b/b0/52/8bb0522e1c925bf6900c67b997ea3047.jpg"><i class="ri-links-line"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="imga.jpg">
+                <div class="layer">
+                    <h3>Click Here</h3>
+                    <p>Download the Image</p>
+                    <a href="https://i.pinimg.com/736x/43/c6/f5/43c6f57eeb4aa0c59cd3e1951a28b81b.jpg"><i class="ri-links-line"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="8163afc1c49b1b3f596de75be75eb652.jpg">
+                <div class="layer">
+                    <h3>Click Here</h3>
+                    <p>Download the Image</p>
+                    <a href="https://i.pinimg.com/1200x/81/63/af/8163afc1c49b1b3f596de75be75eb652.jpg"><i class="ri-links-line"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://www.pinterest.com/" class="btn">See More</a>
+    </div>
+</div>
+<!------------contact----------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="ri-send-plane-fill"></i>abc@gmail.com</p>
+                <p><i class="ri-phone-fill"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61562740419959"><i class="ri-facebook-circle-fill"></i></a>
+                    <a href="https://x.com/AnsariAmaa21103"><i class="ri-twitter-fill"></i></a>
+                    <a href="https://www.instagram.com/_ansari_amaan___/"><i class="ri-instagram-fill"></i></a>
+                    <a href="https://www.linkedin.com/in/ansari-amaan-6279a1332/"><i class="ri-linkedin-fill"></i></a>
+                </div>
+                <a href="my cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="sumbit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>That looks great! 😊 If you need any refinements or additions, feel free to ask. 🚀</p>
+    </div>
+</div>
+    <script>
+    let tabLinks = document.querySelectorAll(".tab-links");
+    let tabContents = document.querySelectorAll(".tab-content");
+
+    function opentab(tabname) {
+    tabLinks.forEach((tab) => tab.classList.remove("active-link"));
+    tabContents.forEach((content) => content.classList.remove("active-tab"));
+
+    document.getElementById(tabname).classList.add("active-tab");
+    event.currentTarget.classList.add("active-link");
+}
+    </script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+  
+    // Open the side menu
+    function openMenu() {
+      sidemenu.style.right = "0";  // Move menu into view
+    }
+  
+    // Close the side menu
+    function closeMenu() {
+      sidemenu.style.right = "-250px";  // Move the menu out of view
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxLUC5moBvyn1hq4rvnX1D7EkyRKYackBO_ImvrDB_mhiXE3oXU3v4A0cb63A6GdLozIA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
